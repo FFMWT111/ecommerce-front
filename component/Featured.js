@@ -5,6 +5,8 @@ import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 import ButtonLink from "./ButtonLink";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
+import Image from "next/image";
+import Mac from "./images/images.jpg";
 
 const Bg = styled.div`
   background: hsla(0, 0%, 13%, 1);
@@ -111,7 +113,7 @@ export default function Featured({ product }) {
             </div>
           </Column>
           <Column>
-            <img src="https://www.apple.com.cn/v/macbook-pro/ak/images/overview/themes/performance/mbp_16_screen_battery_startframe__dznmst9wk5g2_large_2x.jpg" />
+            <Image src={Mac} alt="mac" width={700} height={350} />
           </Column>
         </ColumnsWrapper>
       </Center>

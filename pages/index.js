@@ -5,7 +5,6 @@ import { Product } from "@/models/Products";
 import mongoose from "mongoose";
 
 export default function HomePage({ featuredProduct, newProducts }) {
-  console.log({ newProducts });
   return (
     <div>
       <Header />
